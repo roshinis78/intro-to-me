@@ -18,7 +18,7 @@ class Bubbles extends React.Component {
       let whichImage = Math.floor(Math.random() * 2);
       let src = require("./images/intro-bg-" + whichImage + ".png");
 
-      bubbles.push(<img alt="bubble" key={"bubble" + i} className="bubble" src={src} style={style}></img>);
+      bubbles.push(<img alt="Watercolor bubble painted by Roshini" key={"bubble" + i} className="bubble" src={src} style={style}></img>);
     }
 
     return <div>{bubbles}</div>;

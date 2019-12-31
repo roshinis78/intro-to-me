@@ -1,14 +1,15 @@
 import React from 'react';
-import Slideshow from "./Slideshow.js";
+import Slide from "./Slide.js";
+import "bootstrap/dist/css/bootstrap.css"
+import "typeface-roboto";
 
 import './styles/App.css';
-import "font-awesome/css/font-awesome.min.css";
 
 
 function App() {
   return (
     <div className="App">
-      <Slideshow></Slideshow>
+      <Slide></Slide>
     </div>
   );
 }
