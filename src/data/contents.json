@@ -39,12 +39,12 @@
         "content": [
             {
                 "text": "Open source contributor ",
-                "linkText": " @lyft/cartography",
+                "linkText": " @ lyft/cartography",
                 "link": "https://github.com/lyft/cartography/pull/331"
             },
             {
-                "text": "Explore all of my personal endeavours on GitHub",
-                "linkText": " @roshinis78",
+                "text": "Explore all of my personal endeavors on GitHub",
+                "linkText": " @ roshinis78",
                 "link": "https://github.com/roshinis78"
             }
         ]
