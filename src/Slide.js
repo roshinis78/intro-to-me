@@ -92,9 +92,9 @@ class Slide extends React.Component {
             <Section 
               header="Updates" 
               content={<Summary p={[
-                <span>📚 Reading <Link text="If the Oceans Were Ink by Carla Power" link="https://www.goodreads.com/book/show/22320455-if-the-oceans-were-ink"/></span>,
-                <span>😎 Interned with <Link text="Cloud Engineering @ The Climate Corp" link="https://climate.com/"/> this summer</span>,
-                <span>🚣🏾‍♀️ <Link text="Lyft OSS Cartography" link="https://github.com/lyft/cartography"/> Contributor/Maintainer</span>
+                <span><span role="img" aria-label="book">📚</span> Reading <Link text="If the Oceans Were Ink by Carla Power" link="https://www.goodreads.com/book/show/22320455-if-the-oceans-were-ink"/></span>,
+                <span><span role="img" aria-label="sunglasses face">😎</span> Interned with <Link text="Cloud Engineering @ The Climate Corp" link="https://climate.com/"/> this summer</span>,
+                <span><span role="img" aria-label="rowboat">🚣🏾‍♀️</span> <Link text="Lyft OSS Cartography" link="https://github.com/lyft/cartography"/> Contributor/Maintainer</span>
               ]}/>}/>
             <Section 
               header="University of Illinois at Urbana-Champaign"
@@ -110,9 +110,9 @@ class Slide extends React.Component {
             <Section
               header="Honors"
               content={<Summary p={[
-                <span>🏅 James Scholar Honors Student (2017-2020)</span>,
-                <span>🏅 Frank C. Mock Scholarship (2019)</span>,
-                <span>🏅 John Deere Foundation Scholarship (2018)</span>
+                <span><span role="img" aria-label="award">🏅</span> James Scholar Honors Student (2017-2020)</span>,
+                <span><span role="img" aria-label="award">🏅</span> Frank C. Mock Scholarship (2019)</span>,
+                <span><span role="img" aria-label="award">🏅</span> John Deere Foundation Scholarship (2018)</span>
               ]}/>}
             />
           </div>
@@ -135,9 +135,9 @@ class Slide extends React.Component {
 
     return (
       <div
-        className={this.state.nightMode ? "dark fixed-top" : "light fixed-top"}
+        className={this.state.nightMode ? "dark" : "light"}
       >
-        <div style={{ position: "fixed", top: "1%", left: "1%", zIndex: 40 }}>
+        <div className="custom-navbar">
           <IconButton color="inherit" onClick={this.back}>
             <i className="fas fa-reply"></i>
           </IconButton>
@@ -152,8 +152,7 @@ class Slide extends React.Component {
         {this.bubbles}
         <div
           id="slide"
-          className="d-flex flex-column justify-content-center align-items-center p-3"
-          style={{ position: "relative", zIndex: 30, minHeight: "100vh" }}
+          className={name === "About"? "mt-2 mt-md-0": ""}
           onClick={
             content[this.state.name]["next"] != null ? this.next : this.toMenu
           }
@@ -195,7 +194,7 @@ class Summary extends React.Component {
   render() {
     return (
       <div>
-        {this.props.p.map(p => <p className="mb-0">{p}</p>)}
+        {this.props.p.map(p => <p key={uuidv4()} className="mb-0">{p}</p>)}
       </div>
     );
   }

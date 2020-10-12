@@ -22,6 +22,10 @@
   color: rgba(118, 207, 248, 0.774);
 }
 
+.dark .about-description a {
+  color: rgba(56, 140, 218, 0.904);
+}
+
 .light a {
   color: rgba(56, 140, 218, 0.904); 
 }
@@ -133,6 +137,42 @@
 
 .about-image-name-container {
   display: none;
+}
+
+.custom-navbar {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  z-index: 40; 
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  background-color: transparent;
+}
+
+#slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  position: relative;
+  z-index: 30;
+  min-height: 100vh;
+}
+
+@media (max-width: 768px) {
+  #slide {
+    margin-top: 2rem;
+  }
+
+  .dark .custom-navbar {
+    background-color: #292b2c;
+  }
+  
+  .light .custom-navbar {
+    background-color: white;
+  }
 }
 
 @media (min-width: 576px) {
