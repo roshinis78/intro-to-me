@@ -92,15 +92,14 @@ class Slide extends React.Component {
             <Section 
               header="Updates" 
               content={<Summary p={[
-                <span><span role="img" aria-label="book">📚</span> Reading <Link text="If the Oceans Were Ink by Carla Power" link="https://www.goodreads.com/book/show/22320455-if-the-oceans-were-ink"/></span>,
-                <span><span role="img" aria-label="sunglasses face">😎</span> Interned with <Link text="Cloud Engineering @ The Climate Corp" link="https://climate.com/"/> this summer</span>,
-                <span><span role="img" aria-label="rowboat">🚣🏾‍♀️</span> <Link text="Lyft OSS Cartography" link="https://github.com/lyft/cartography"/> Contributor/Maintainer</span>
+                <span><span role="img" aria-label="bike">🚵🏾‍♀️</span> Out and about, exploring a new city!</span>,
+                <span><span role="img" aria-label="sunglasses face">😎</span> Cloud Engineer <Link text="@ The Climate Corp" link="https://climate.com/"/></span>
               ]}/>}/>
             <Section 
               header="University of Illinois at Urbana-Champaign"
               content={<Summary p={[
-                <span>B.S. Computer Engineering (May 2021)</span>,
-                <span>GPA: 3.83</span>
+                <span>B.S. Computer Engineering (GPA: 3.83)</span>,
+                <i>Graduated with Highest Honors in May 2021</i>
               ]}/>}
             />
             <Section 

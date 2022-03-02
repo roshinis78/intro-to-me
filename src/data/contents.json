@@ -10,7 +10,7 @@
         "next": "line"
     },
     "line": {
-        "text": "My name is Roshini Saravankumar!",
+        "text": "My name is Roshini Saravanakumar!",
         "last": "hook",
         "next": "sinker"
     },
@@ -54,7 +54,7 @@
         "next": null,
         "content": [
             {
-                "text": "Cloud Engineering Intern", 
+                "text": "Cloud Engineer (+ also interned! 😄)", 
                 "linkText": " @ The Climate Corp",
                 "link": "https://climate.com/"
             },
@@ -75,16 +75,16 @@
         "next": null,
         "content": [
             {
-                "text": "🎨 Learning how to use Procreate"
+                "text": "🌻 Exploring a new city"
             },
             {
-                "text": "🌱 Plant parent to my Monstera, Pothos, and Aloe Vera"
+                "text": "🌈 Sharing art with friends"
             },
             {
-                "text": "🎧 Guilty of listening through entire albums on Sunday evenings"
+                "text": "🌱 Sitting with my plants"
             },
             {
-                "text": "🌊 Maintaining presence in the Now"
+                "text": "🌊 Living in the present"
             }
         ]
     }
